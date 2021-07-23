@@ -17,8 +17,17 @@ namespace Business.Concrete
             _product = product;
         }
 
-        public List<Product> GetAll()
+        public void Add(Product product)
         {
+         
+
+            _product.Add(product);
+             
+        }
+
+        public  List<Product> GetAll()
+        {
+
             return _product.GetAll();
         }
 
